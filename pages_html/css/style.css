@@ -6,8 +6,14 @@
     padding: 0;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-li, a, button, .container1, .container2 {
+
+li, a, button, .container1,footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -34,20 +40,17 @@ header {
 .logo {
     cursor: pointer;
     position: fixed;
-    width: 10%;
-    top: 1%;
-    left: 1.4%;
-    right: 2%;
+    width: 9%;
+    margin: 2% 29% 2% -8%;
     font-size: 18px;
     background: none;
     position-try-order: 1;
 }
 
 nav {
-    position: fixed;
-    top: 6%;
-    left: 37%;
-    right: 39%;
+    position: relative;
+    padding: 15% 10% 15% 10%;
+    margin: 15% 1% 15% 22%;
     position-try-order: 2;
 }
 
@@ -196,33 +199,31 @@ ul.submenu li:hover a:hover {
 
 /*--------------la partie contenu---------------*/
 .container1 {
+    max-width: 100%;
     background-color: #eee0bb;
-    height: 1000px;
-    width: 200%;
+    height: 150vh;
+    width: 100%;
 }
 
 
 
 
 /* =================la partie pied ===================*/
-.container2 {
-    position: relative;
+footer {
+    max-width: 100%;
     background-image: linear-gradient(rgb(145, 136, 125),rgb(158, 142, 119), #eee0bb);
     background-color: rgb(145, 136, 125);
     height: 200px;
-    width: 200%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 
 
-.container2 p {
+footer p {
     color: white;
     font-size: 20px;
     position: relative;
-    top: 5em;
-    left: 39em;
-    right: 10em;
-    bottom: 20%;
-
-
+    margin: 15px 10px 15px 10px;
 }
