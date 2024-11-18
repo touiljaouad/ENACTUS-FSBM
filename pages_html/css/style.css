@@ -24,7 +24,7 @@ li, a, button, .container1,footer {
 
 /* Style de la barre de navigation */
 header {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 15vh;
     display: flex;
@@ -37,24 +37,41 @@ header {
     
 }
 
-.logo {
+header > a:first-child {
     cursor: pointer;
-    position: fixed;
-    width: 9%;
-    margin: 2% 29% 2% -8%;
+    position: absolute;
+    width: 100%;
+    margin: 0% 0% 5.5% -8.8%;
     font-size: 18px;
     background: none;
     position-try-order: 1;
 }
 
+.logo {
+    cursor: pointer;
+    position: absolute;
+    width: 8.5%;
+    font-size: 18px;
+    background: none;
+    position-try-order: 1;
+}
+
+.logo:hover {
+    filter: drop-shadow(1px 1px 30px #FFD226);
+}
+
 nav {
-    position: relative;
+    position: absolute;
     padding: 15% 10% 15% 10%;
-    margin: 15% 1% 15% 22%;
+    margin: 15% 1% 15% 25.5%;
     position-try-order: 2;
 }
 
 .nav-links {
+    position: absolute;
+    top: 48%;
+    left: 6%;
+    right: -20%;
     display: flex;
     list-style: none;
     gap: 20px;
@@ -93,9 +110,9 @@ nav {
 }
 
 button {
-    position: fixed;
+    position: absolute;
     right: 5%;
-    top: 5%;
+    top: 50px;
     cursor: pointer;
     padding: 9px 25px;
     background-color: rgb(136, 130, 110);
